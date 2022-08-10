@@ -37,6 +37,11 @@ public class UserDaoJDBCImpl implements UserDao {
             connection.commit();
 
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException re) {
+                re.printStackTrace();
+            }
             e.printStackTrace();
         }
 
@@ -61,6 +66,11 @@ public class UserDaoJDBCImpl implements UserDao {
             statement.execute(SQL);
             connection.commit();
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException re) {
+                re.printStackTrace();
+            }
             e.printStackTrace();
         }
         userCount = 0L;
@@ -79,6 +89,11 @@ public class UserDaoJDBCImpl implements UserDao {
             pstmnt.executeUpdate();
             connection.commit();
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException re) {
+                re.printStackTrace();
+            }
             e.printStackTrace();
         }
     }
@@ -93,6 +108,11 @@ public class UserDaoJDBCImpl implements UserDao {
             connection.commit();
 
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException re) {
+                re.printStackTrace();
+            }
             e.printStackTrace();
         }
     }
@@ -117,6 +137,11 @@ public class UserDaoJDBCImpl implements UserDao {
                 listOfUsers.add(user);
             }
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException re) {
+                re.printStackTrace();
+            }
             e.printStackTrace();
         }
 
@@ -130,6 +155,11 @@ public class UserDaoJDBCImpl implements UserDao {
             statement.executeUpdate(SQL);
             connection.commit();
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException re) {
+                re.printStackTrace();
+            }
             e.printStackTrace();
         }
         userCount = 0L;

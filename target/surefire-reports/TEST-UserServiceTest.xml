@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="UserServiceTest" time="0.977" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="UserServiceTest" time="1.678" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -42,7 +42,7 @@
     <property name="java.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2 deploy"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2 test"/>
     <property name="java.home" value="/Users/zhuravlev/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="ru"/>
@@ -60,10 +60,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="UserServiceTest" name="saveUser" time="0.672"/>
-  <testcase classname="UserServiceTest" name="removeUserById" time="0.071"/>
-  <testcase classname="UserServiceTest" name="getAllUsers" time="0.063"/>
-  <testcase classname="UserServiceTest" name="dropUsersTable" time="0.04"/>
-  <testcase classname="UserServiceTest" name="createUsersTable" time="0.063"/>
-  <testcase classname="UserServiceTest" name="cleanUsersTable" time="0.068"/>
+  <testcase classname="UserServiceTest" name="saveUser" time="1.216"/>
+  <testcase classname="UserServiceTest" name="removeUserById" time="0.099"/>
+  <testcase classname="UserServiceTest" name="getAllUsers" time="0.173"/>
+  <testcase classname="UserServiceTest" name="dropUsersTable" time="0.055"/>
+  <testcase classname="UserServiceTest" name="createUsersTable" time="0.054"/>
+  <testcase classname="UserServiceTest" name="cleanUsersTable" time="0.081"/>
 </testsuite>
